@@ -1,0 +1,15 @@
+Andrew Chien
+B01008515
+C++
+
+Instructions:
+-run the makefile or run g++ ./achienSalsa208.cpp -o achienSalsa208
+-Then, run like in the specifications: ./achienSalsa208 <keysize> <key> <nonce> <text>
+
+Each portion of the Salsa20-8 encryption algorithm has its own function.
+The program first parses the command line arguments and divides the key, nonce, and text into word-sized chunks in an array.
+
+Confirmed Test Cases:
+1. The one in the description: 128 "deadbeefdeadbeefdeadbeefdeadbeef" "1234567890abcdef" "546869736973706c61696e74657874" -> 741f797da6c2b1e5bb1d9f7c72a3ee
+2. Semi-works (omits leading 0s): 256 7436714A5734755253595631554E524F5248446D724D366C5A68665557396C33 43706D5A525A4152 48656c6c6f576f726c64 -> 2bd2c954365c7c2351 (supposed to be 002bd2c954365c7c2351, issue with printing. I would fix it if I knew how)
+3. Randomly Generated 128-bit key: 128 e2204a082b234c461899791f804853a6 6F74736C64346971 6E6F74506C61696E5465787442757443616D656C54657874 -> 9e92b6dc1b09ec1cf5e37807e852a851dce3403d75aca0af
