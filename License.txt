@@ -1,0 +1,8 @@
+All Rights Reserved
+
+Copyright (c) 2023 Andrew Chien
+
+These software programs are the property of Andrew Chien and the associated documentation files originate from Binghamton University School of Computing. 
+Permission is hereby granted to prospective employers and academic evaluators to review the source code for evaluation purposes only. 
+
+No permission is granted to copy, modify, merge, publish, distribute, sublicense, compile, run, or sell copies of the Software for any other purpose.
